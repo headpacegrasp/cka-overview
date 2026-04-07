@@ -27,16 +27,18 @@
 
   body {
     font-family: 'Poppins', sans-serif;
-    background: var(--page-bg);
+    background: var(--white);
     color: var(--navy);
+    margin: 0;
+    padding: 0;
   }
 
   .page {
-    max-width: 1100px;
-    margin: 32px auto;
+    max-width: 100%;
+    margin: 0;
     background: var(--white);
-    box-shadow: 0 8px 48px rgba(13,34,64,0.18);
-    border-radius: 4px;
+    box-shadow: none;
+    border-radius: 0;
     overflow: hidden;
   }
 
@@ -58,7 +60,7 @@
   .hero-title-zone {
     display: flex;
     align-items: center;
-    padding: 28px 36px 20px;
+    padding: 28px max(36px, calc((100vw - 1400px)/2 + 36px)) 20px;
     gap: 28px;
   }
   .hero-logo {
@@ -99,12 +101,12 @@
   .hero-divider {
     height: 1px;
     background: rgba(255,255,255,0.08);
-    margin: 0 36px;
+    margin: 0 max(36px, calc((100vw - 1400px)/2 + 36px));
   }
   .hero-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 20px 36px 24px;
+    padding: 20px max(36px, calc((100vw - 1400px)/2 + 36px)) 24px;
     gap: 0;
   }
   .stat {
@@ -144,7 +146,7 @@
   .hero-gold-rule {
     height: 2px;
     background: var(--gold);
-    margin: 0 36px 0;
+    margin: 0 max(36px, calc((100vw - 1400px)/2 + 36px)) 0;
   }
 
   @keyframes fadeUp {
@@ -154,7 +156,7 @@
 
   /* ── SECTION COMMON ────────────────────────────── */
   .section {
-    padding: 36px 36px 32px;
+    padding: 36px max(36px, calc((100vw - 1400px)/2 + 36px)) 32px;
   }
   .section-label {
     text-align: center;
@@ -177,7 +179,7 @@
   .promise {
     background: #D6EEEF;
     border-left: 6px solid var(--gold);
-    padding: 28px 36px;
+    padding: 28px max(36px, calc((100vw - 1400px)/2 + 36px));
   }
   .promise-label {
     font-size: 13px;
@@ -249,7 +251,7 @@
   .care-section {
     background: var(--navy);
     border-left: 6px solid var(--gold);
-    padding: 28px 36px 32px;
+    padding: 28px max(36px, calc((100vw - 1400px)/2 + 36px)) 32px;
   }
   .care-section .section-label { color: var(--gold-l); }
   .care-section .section-sub { color: var(--muted); }
@@ -419,7 +421,7 @@
   .local-section {
     background: var(--navy);
     border-left: 6px solid var(--gold);
-    padding: 28px 36px 32px;
+    padding: 28px max(36px, calc((100vw - 1400px)/2 + 36px)) 32px;
   }
   .local-section .section-label { color: var(--gold-l); }
   .local-grid {
@@ -462,7 +464,7 @@
   /* ── OWNER ─────────────────────────────────────── */
   .owner-section {
     background: linear-gradient(135deg, #0D2240 0%, #152d52 60%, #0B4A5C 100%);
-    padding: 48px 36px;
+    padding: 48px max(36px, calc((100vw - 1400px)/2 + 36px));
     position: relative;
     overflow: hidden;
   }
@@ -605,7 +607,7 @@
   .quote-section {
     background: var(--cream);
     text-align: center;
-    padding: 36px 60px;
+    padding: 36px max(60px, calc((100vw - 1400px)/2 + 60px));
     border-top: 1px solid #E8E0D0;
   }
   .quote-mark {
@@ -635,7 +637,7 @@
   .footer {
     background: var(--navy);
     border-left: 6px solid var(--gold);
-    padding: 28px 36px;
+    padding: 28px max(36px, calc((100vw - 1400px)/2 + 36px));
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 24px;
@@ -691,7 +693,7 @@
   .footer-bottom {
     background: var(--navy);
     text-align: center;
-    padding: 10px;
+    padding: 10px max(36px, calc((100vw - 1400px)/2 + 36px));
     font-size: 9px;
     color: rgba(255,255,255,0.35);
     border-top: 1px solid rgba(255,255,255,0.06);
@@ -959,7 +961,7 @@
       <div class="footer-contacts">
         <span class="fc-label">Office:</span><span class="fc-val">8370 Veterans Hwy, Millersville, MD 21108</span>
         <span class="fc-label">Phone:</span><span class="fc-val">443-214-3355</span>
-        <span class="fc-label">Email:</span><span class="fc-val">info@annapolis.comfortkeepers.com</span>
+        <span class="fc-label">Email:</span><span class="fc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="432a2d252c03222d2d22332c2f2a306d202c2e252c3137282626332631306d202c2e">[email&#160;protected]</a></span>
         <span class="fc-label">Web:</span><span class="fc-val">www.comfortkeepers.com</span>
       </div>
     </div>
@@ -974,14 +976,5 @@
 
 </div>
 
-<script>
-  // Embed the CK logo from the extracted PNG if available
-  // Anchor icon via CSS unicode
-  document.querySelectorAll('.stat-anchor').forEach(el => {
-    el.textContent = '⚓';
-    el.style.fontSize = '18px';
-    el.style.color = 'rgba(30,74,122,0.9)';
-  });
-</script>
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Embed the CK logo from the extracted PN
