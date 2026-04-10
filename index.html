@@ -180,6 +180,7 @@
     background: #D6EEEF;
     border-left: 6px solid var(--gold);
     padding: 28px max(36px, calc((100vw - 1400px)/2 + 36px));
+    text-align: center;
   }
   .promise-label {
     font-size: 13px;
@@ -300,6 +301,13 @@
     font-size: 15px;
     font-weight: 700;
     color: var(--white);
+  }
+  .care-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    font-style: italic;
   }
   .care-list {
     list-style: none;
@@ -426,7 +434,7 @@
   .local-section .section-label { color: var(--gold-l); }
   .local-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-top: 4px;
   }
@@ -874,22 +882,21 @@
 
   <!-- CARE SERVICES -->
   <div class="care-section">
-    <p class="section-label">Customized Care Plans</p>
-    <p class="section-sub">Individualized plans built on a whole-person assessment.</p>
+    <p class="section-label">Our Services</p>
+    <p class="section-sub">Compassionate, non-medical companion and homemaker services designed to help seniors and adults maintain independence, safety, and quality of life at home.</p>
     <p style="text-align:center;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-l);margin-bottom:14px;">&#10003; Available Now</p>
     <div class="care-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom:24px;">
       <div class="care-card">
         <div class="care-header">
           <div class="care-abbr">CC</div>
-          <h3 class="care-title">Companion Care</h3>
+          <h3 class="care-title">Companion Services</h3>
         </div>
+        <p class="care-desc">Meaningful social engagement, supervision, and support for daily routines.</p>
         <ul class="care-list">
-          <li>Companionship &amp; Conversation</li>
-          <li>Recreational Activities &amp; Social Engagement</li>
-          <li>Incidental Transportation</li>
-          <li>Errands &amp; Shopping</li>
-          <li>Respite for Family Caregivers</li>
-          <li>Safety Supervision &amp; Monitoring</li>
+          <li>Conversation, card games, reading aloud, and hobby engagement</li>
+          <li>Supervision &amp; safety monitoring for cognitive changes or fall risk</li>
+          <li>Appointment escort to medical visits, social outings, and community events</li>
+          <li>Scheduled phone or video check-ins to ensure wellbeing</li>
         </ul>
       </div>
       <div class="care-card">
@@ -897,14 +904,58 @@
           <div class="care-abbr">HM</div>
           <h3 class="care-title">Homemaker Services</h3>
         </div>
+        <p class="care-desc">A clean, comfortable, and functional home environment - maintained for you.</p>
         <ul class="care-list">
-          <li>Light Housekeeping</li>
-          <li>Laundry &amp; Linen Care</li>
-          <li>Meal Preparation</li>
-          <li>Grocery Shopping</li>
-          <li>Mail &amp; Correspondence Help</li>
-          <li>Home Organization</li>
+          <li>Vacuuming, dusting, mopping, bathroom/kitchen cleaning, and laundry</li>
+          <li>Nutritious meal planning and preparation based on dietary preferences</li>
+          <li>Grocery runs, pharmacy pickups, post office visits, and household errands</li>
+          <li>Mail sorting, bill organization, and document filing</li>
         </ul>
+      </div>
+      <div class="care-card">
+        <div class="care-header">
+          <div class="care-abbr">TR</div>
+          <h3 class="care-title">Transportation &amp; Errands</h3>
+        </div>
+        <p class="care-desc">Reliable, safe transportation for clients who no longer drive or prefer not to.</p>
+        <ul class="care-list">
+          <li>Door-to-door transport within Anne Arundel County for appointments, shopping, and social visits</li>
+          <li>Extended transport beyond county lines (Baltimore, DC metro) with advance scheduling</li>
+          <li>Pharmacy pickups, post office runs, dry cleaning, and other household errands</li>
+        </ul>
+      </div>
+      <div class="care-card">
+        <div class="care-header">
+          <div class="care-abbr">SS</div>
+          <h3 class="care-title">Safety, Technology &amp; Home Organization</h3>
+        </div>
+        <p class="care-desc">Powered by Our Futures Past, keeping seniors safe at home and in the digital world.</p>
+        <ul class="care-list">
+          <li>Room-by-room home safety walkthrough with written recommendations</li>
+          <li>Decluttering, seasonal organization, pantry/closet systems, and labeling</li>
+          <li>Device setup, troubleshooting, and software updates for smartphones, tablets, and smart TVs</li>
+          <li>Scam prevention, phishing education, AI voice cloning awareness, and password coaching</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-l);margin:20px 0 14px;">Service Packages</p>
+    <p style="text-align:center;font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:18px;">Save with bundled plans tailored to common needs.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px;">
+      <div style="border:1px solid rgba(196,154,45,0.5);border-radius:10px;padding:20px 16px;text-align:center;background:rgba(196,154,45,0.06);">
+        <p style="font-family:'Lora',serif;font-size:17px;font-weight:700;color:var(--gold-l);margin-bottom:4px;">Essentials</p>
+        <p style="font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">4 Hours / Week</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.6;">Companionship<br>Housekeeping<br>Meal Prep (1 meal/visit)</p>
+      </div>
+      <div style="border:2px solid var(--gold);border-radius:10px;padding:20px 16px;text-align:center;background:rgba(196,154,45,0.1);position:relative;">
+        <p style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 12px;border-radius:10px;">Most Popular</p>
+        <p style="font-family:'Lora',serif;font-size:17px;font-weight:700;color:var(--gold-l);margin-bottom:4px;">Comfort</p>
+        <p style="font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">8 Hours / Week</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.6;">Everything in Essentials<br>Errands &amp; Transportation<br>Phone Check-Ins (2x/wk)</p>
+      </div>
+      <div style="border:1px solid rgba(196,154,45,0.5);border-radius:10px;padding:20px 16px;text-align:center;background:rgba(196,154,45,0.06);">
+        <p style="font-family:'Lora',serif;font-size:17px;font-weight:700;color:var(--gold-l);margin-bottom:4px;">Premier</p>
+        <p style="font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">12 Hours / Week</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.75);line-height:1.6;">Everything in Comfort<br>Tech Support &amp; Home Safety<br>Daily Check-Ins</p>
       </div>
     </div>
     <p style="text-align:center;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:14px;">Coming Soon &mdash; RSA License Pending</p>
@@ -937,6 +988,7 @@
         </ul>
       </div>
     </div>
+    <p style="text-align:center;font-size:14px;color:var(--gold-l);margin-top:20px;">Consultations are always free - contact us today to build your personalized care plan.</p>
   </div>
 
   <!-- OUR APPROACH -->
@@ -982,14 +1034,22 @@
   <!-- LOCAL COMMITMENT -->
   <div class="local-section">
     <p class="section-label">Our Annapolis Commitment</p>
-    <div class="local-grid" style="grid-template-columns: repeat(2, 1fr);">
+    <div class="local-grid">
       <div class="local-card">
-        <p class="local-title">Digital Safety Education</p>
-        <p class="local-desc">Our Futures Past / Virtual Tech Mentor delivers workshops protecting seniors from AI scams, phishing &amp; deepfakes.</p>
+        <p class="local-title">Professionalism</p>
+        <p class="local-desc">Every caregiver is background-checked, trained, and supervised by experienced leadership with deep roots in healthcare and public service.</p>
       </div>
       <div class="local-card">
-        <p class="local-title">RSA License Pending</p>
-        <p class="local-desc">Our Maryland Residential Service Agency license is currently under OHCQ review. Companion and homemaker services are available now - personal care services will launch upon licensure.</p>
+        <p class="local-title">Community Engagement</p>
+        <p class="local-desc">Through Our Futures Past, we host free intergenerational events at senior centers across Anne Arundel County - because connection starts locally.</p>
+      </div>
+      <div class="local-card">
+        <p class="local-title">Education &amp; Safety</p>
+        <p class="local-desc">Our Virtual Tech Mentor program delivers workshops protecting seniors from AI scams, phishing, and deepfakes - keeping families safe in a digital world.</p>
+      </div>
+      <div class="local-card">
+        <p class="local-title">Value &amp; Quality</p>
+        <p class="local-desc">Transparent pricing, personalized care plans, and a team that treats every client like family - because exceptional care should never be out of reach.</p>
       </div>
     </div>
   </div>
